@@ -25,5 +25,6 @@ $  sudo apt-get install clang
 
 ### Running files
 
-Each .c file can be built with `make filename`, notice that you do not want to write .c at the end. If you already have the binary, just run `./filename`.
+Each .c file can be built with `make filename`, notice that you do not want to write .c at the end while using `make`. If you already have the binary, just run `./filename`.
 
+`clang filename.c -o binary_filename` can also be used, `make` functions as a shortcut to this notation. `-o` flag can be used to change the target directory and binary name.
