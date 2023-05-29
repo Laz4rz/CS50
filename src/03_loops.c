@@ -26,8 +26,57 @@ int main(void)
 
 
     // FOR
-    for (int i = 0; i < 10; i++)
+    for (int j = 0; j < 10; j++)
     {
         printf("BARKbutINfor\n");
     }
+
+
+    // INFINITE WHILE AND BREAK
+    while (true)
+    {
+        printf("You just got infinilooped\n");
+        break;
+    }
+
+    printf("Close call\n");
+
+
+    // CREATING BLOCKS
+    const int limit = 5;
+
+    printf("\nImagine this is your canvas\n");
+    int demanded_width = get_int("Width of the block:");
+    int demanded_height = get_int("Height of the block:");
+    printf("\n");
+
+    for (int j = 0; j < demanded_height; j++)
+    {
+        for (int k = 0; k < demanded_width; k++)
+        {
+            printf("#");
+
+            if (k >= limit)
+            {
+                break;
+                // print("Max blocks in one direction is %s", ) 
+            }
+        }
+        printf("\n");
+
+        if (j >= limit)
+            {
+                break;
+            }
+    }
+
+    printf("\nCool block dude\n");
+
+    // DO-WHILE UNTILL CORRECT SIZE IS GIVEN
+    int l;
+    do
+    {
+        l = get_int("Size: ");
+    } 
+    while (l < 1); // this also works for wrong types
 }
