@@ -1,5 +1,6 @@
 # CS50
 
+### Additional requirements
 Requires the installation of the cs50 library for C.
 
 1. Install the libcs50:
@@ -19,3 +20,8 @@ export LDLIBS="-lcrypt -lcs50 -lm"
 ```
 $  sudo apt-get install clang 
 ```
+
+### Running files
+
+Each .c file can be built with `make filename`, notice that you do not want to write .c at the end. If you already have the binary, just run `./filename`.
+
