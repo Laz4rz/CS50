@@ -16,6 +16,8 @@ export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O
 export LDLIBS="-lcrypt -lcs50 -lm"
 ```
 
+After that it is good to execute .bashrc again with `source .bashrc`.
+
 3. Install clang:
 ```
 $  sudo apt-get install clang 
