@@ -27,7 +27,7 @@ $  sudo apt-get install clang
 
 Each .c file can be compiled with `make filename`, notice that you do not want to write .c at the end while using `make`. If you already have the binary, just run `./filename`.
 
-`clang filename.c -o binary_filename` can also be used, `make` functions as a shortcut to this notation. `-o` flag can be used to change the target directory and binary name. In both cases clang will be used to compile the source code. Remember that while using clang, you have to include the flags stated in .bashrc explicitly for the binaries to compile properly.
+`clang filename.c -o binary_filename -lcs50` can also be used, `make` functions as a shortcut to this notation. `-o` flag can be used to change the target directory and binary name. In both cases clang will be used to compile the source code. Remember that while using clang, you have to include the flags stated in .bashrc explicitly for the binaries to compile properly.
 
 Makefile can be used to automate the creation of binaries. But it wouldn't work how I wanted it to yet.
  
