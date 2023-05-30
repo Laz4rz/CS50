@@ -55,7 +55,6 @@ int main(int argc, string argv[])
     /*
     Strings are arrays of chars, their last element is a NUL character
     */
-
     char c1 = 'H';
     char c2 = 'I';
     char c3 = '!';
