@@ -104,7 +104,6 @@ int main(int argc, string argv[])
     /*
     add int argc, string argv[] to main
     */
-
     if (argc == 2)
     {
         printf("\nCommand line arguments is: %s\n", argv[1]);
