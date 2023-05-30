@@ -20,7 +20,7 @@ void print_grid(int width, int height);
 
 int main(void)
 {
-	printf("Global size limit of your blocks is %i", GLOBAL_SIZE_LIMIT);
+	printf("Global size limit of your blocks is %i\n", GLOBAL_SIZE_LIMIT);
 
 	int width = get_size("Gimme width");
 	int height = get_size("Gimme height");
