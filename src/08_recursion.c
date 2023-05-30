@@ -1,4 +1,4 @@
-// CS50 Lecture 4 - recursion
+// CS50 Lecture 3 - recursion
 
 #include <stdio.h>
 #include <cs50.h>

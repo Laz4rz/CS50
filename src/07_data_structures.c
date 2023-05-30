@@ -1,4 +1,4 @@
-// CS50 Lecture 4 - Data Structures
+// CS50 Lecture 3 - Data Structures
 
 #include <stdio.h>
 #include <cs50.h>
