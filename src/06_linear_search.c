@@ -1,4 +1,4 @@
-// CS50 Lecture 3 - Linear search
+// CS50 Lecture 4 - Linear search
 
 #include <stdio.h>
 #include <cs50.h>
