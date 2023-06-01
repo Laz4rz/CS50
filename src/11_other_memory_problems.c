@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <cs50.h>
 
 void swap(int *a, int *b);
 
@@ -66,11 +67,39 @@ int main(void)
         to limit the input to some n first input characters -> scanf("%4s", s);
         */
         char input[4];
-        printf("Gimme a 4 char word: ");
-        scanf("%4s", input);
+        printf("Gimme a 3 char word: ");
+        scanf("%3s", input); //make would result in an error here if the string wouldn't be limited, clang would not
         printf("Saved input: \n-value: %s\n-adress: %p\n", input, input);
     }
+    printf("\n");
 
+    // Files writing
+    {
+        // create a pointer to a file
+        FILE *file = fopen("phonebook.csv", "a");
+        
+        // get name and number
+        char name[10];
+        char number[10];
+        
+        printf("Name: ");
+        scanf("%9s", name);
+
+        printf("\nNumber: ");
+        scanf("%9s", number);
+        printf("\n");
+
+        // char *name = get_string("Name: "); ----> for some reason this would not work, program skipped the first get_string everytime 
+        // name = get_string("Name: ");
+        // char *number = get_string("Number: ");
+
+        // write to file
+        fprintf(file, "name, number\n");
+        fprintf(file, "%s, %s\n", name, number);
+    
+        // close file
+        fclose(file);
+    }
 }
 
 /*
