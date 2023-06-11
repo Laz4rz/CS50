@@ -56,18 +56,22 @@ int main(int argc, char* argv[]) // argc is always at least 1 as program name is
             }
             else
             {
-                while (ptr->next != NULL)
+                for (node* ptr = list; ptr != NULL; ptr = ptr->next)
                 {
-                    if (ptr->number >= n->number)
+                    printf("%i here\n", n->number);
+                    if (ptr->next->number >= n->number)
                     {
                         tmp = ptr->next;
                         ptr->next = n;
                         n->next = tmp;
                         break;
                     }
-                    ptr = ptr->next;
+                    else if (ptr->next == NULL)
+                    {   
+                        ptr->next = n;\
+                        break;
+                    }
                 }
-                ptr->next = n;
             }
             
         }
