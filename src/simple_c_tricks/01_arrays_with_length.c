@@ -18,14 +18,16 @@ Int newInt(int length){
 }
 
 int main(void){
-    {
-        Int array = newInt(4);
-        for (int i=0; i<4; i++){
-            array.val[i] = i;
-        }
+    Int array = newInt(4);
+    if (array.val == NULL){
+        printf("Couldn't allocate memory");
+        return 1;
+    }
+    for (int i=0; i<4; i++){
+        array.val[i] = i;
+    }
 
-        for (int i=0; i<4; i++){
-            printf("%i: %i\n", i, array.val[i]);
-        }
+    for (int i=0; i<4; i++){
+        printf("%i: %i\n", i, array.val[i]);
     }
 }
